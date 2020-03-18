@@ -77,7 +77,7 @@ client.on("message", async message => {
 	message.delete().catch(O_o=>{});
 	message.channel.send(sayMessage);
   }
-  if(command === "help") {
+  if(command === "monolith") {
 	const sayMessage = 'Hail, brother. This is your help message!\n\You can use a lot of useful commands.\n\Remember to use the prefix before you type anything.\n\ >hail - So you can greet me properly\n\ >purge - So we can destroy all non-believers. Can delete from 2 to 1000 messages\n\ >say - So I can talk with you, brother.\n\ >ping
 	message.delete().catch(O_o=>{});
 	message.channel.send(sayMessage);
