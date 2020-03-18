@@ -44,7 +44,7 @@ client.on("message", async message => {
   
   if(command === "ping") {
     const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+    m.edit(`Oh Monolith! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
   
   if(command === "say") {
@@ -72,13 +72,13 @@ client.on("message", async message => {
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }
   
-  if(command === "cheeki") {
-	const sayMessage = "Cheeki breeki iv damke!";
+  if(command === "hail") {
+	const sayMessage = "!";
 	message.delete().catch(O_o=>{});
 	message.channel.send(sayMessage);
   }
   if(command === "help") {
-	const sayMessage = 'Oi, you cyka! This is your help message!\n\You can use a lot of useful commands blyat.\n\Remember to use the prefix before you type anything you capitalist pig.\n\ >cheeki - So you can greet me properly\n\ >purge - So you can clear this shithole. Can delete from 2 to 1000 messages\n\ >say - So I can talk with you, blyat\n\ >ping - Whatever cyka, it is useless'
+	const sayMessage = 'Hail, brother. This is your help message!\n\You can use a lot of useful commands.\n\Remember to use the prefix before you type anything.\n\ >hail - So you can greet me properly\n\ >purge - So we can destroy all non-believers. Can delete from 2 to 1000 messages\n\ >say - So I can talk with you, brother.\n\ >ping
 	message.delete().catch(O_o=>{});
 	message.channel.send(sayMessage);
   }
